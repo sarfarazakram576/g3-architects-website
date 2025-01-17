@@ -120,6 +120,9 @@ main{
 }
 
 .feature{
+    max-width: 900px;
+
+    margin: 1.5cm auto;
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -164,12 +167,66 @@ font-size: 2.7rem;
     }
 }
 
+.architect{
+  
+    max-width: 900px;
+    margin: 1cm auto;
+}
+.architect-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.card-container{
+    flex: 1;
+}
+.card-container> p{
+  line-height: 20px;
+  
+}
+.diff{
+    margin-top: -2cm;
+    margin-left: -.8cm;
+}
+.architect-image{
+    flex: 1.5;
+}
+.architect-image img{
+width: 100%;
+
+ 
+}
+.card{
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+.card h1{
+  font-size: 1.35rem;
+}
+.card p{
+    line-height: 20px;
+    font-size: .7rem;
+    margin-top: 15px;
+}
 
 
+/* responsiveness */
+
+@media screen and (max-width:980px){
+    .architect-container{
+        flex-direction: column;
+    }
+    .diff{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
 
 .facts{
-    margin: 1.5cm 0;
-    
+    margin: 2.5cm auto 1cm;
+    max-width: 900px;
 }
 .facts p{
     width: 55%;
@@ -179,28 +236,29 @@ font-size: 2.7rem;
 
 .cards-container{
     display: flex;
-gap: 50px;
+gap: 40px;
     width: 90%;
     margin: 1.8cm auto 0;
    
-    
+
 }
 .cards{
     border: 2px solid #FF900E;
     display: flex;
     gap: 10px;
+    flex: 1;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    flex: 1;
-
-    border-radius: 7px;
+border-radius: 7px;
 }
 .cards img{
     width: 20%;
 }
 .cards p{
+width: 100%;
     font-size: .8rem;
     color: #727272;
     text-align: center;
@@ -217,5 +275,79 @@ gap: 50px;
     .facts p{
         width: 100%;
    text-align: center;
+    }
+}
+
+
+.sponser{
+    max-width: 900px;
+    margin: 2cm auto 0cm;
+
+}
+.sponser h1{
+font-size: 2.1rem;
+}
+.sponser p{
+    width: 60%;
+    text-align: center;
+font-size: .8rem;
+line-height: 22px;
+margin:  0 auto;
+}
+.sponser-image{
+    margin-top: 3rem;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sponser-image img{
+   width: 12%;
+filter: grayscale(100%);
+
+
+}
+
+
+/* responsiveness */
+@media   screen and (max-width:576px) {
+    
+    .sponser-image{
+flex-direction: column;
+    
+    }
+    .sponser-image img{
+        width: 28%;
+     
+     
+     }
+     .sponser p{
+        width: 95%
+    
+    }
+}
+
+
+footer{
+    margin: 0 20px;
+}
+.footer{
+    font-size: 1.2rem;
+color: #424242;
+border-radius: 10px;
+    padding: 1.3cm .4cm;
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto 2cm;
+    background-color: #FFF4E7;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:576px){
+    .footer{
+        font-size: .8rem;
+        line-height: 22px;
     }
 }
