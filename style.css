@@ -93,7 +93,7 @@ color: #FF900E;
     border-radius: 5px;
 }
 
-/* responsiveness */
+/* responsive ness */
 @media screen and (max-width:720px){
     .navbar , .nav-links{
         text-align: center;
@@ -110,4 +110,112 @@ color: #FF900E;
         padding: 0 ;
     }
 
+}
+
+/* main design  */
+main{
+    max-width: 900px;
+    margin: 1.5cm auto;
+    padding: 1cm;
+}
+
+.feature{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature div{
+width: 47%;
+}
+.feature p{
+font-size: .8rem;
+margin: 18px 0;
+line-height: 20px;
+color: #727272;
+}
+.feature h1{
+font-size: 2.7rem;
+
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    gap: 15px;
+}
+.image-container img{
+    width: 100%;
+}
+
+/* responsiveness */
+@media screen and (max-width:810px) {
+    .feature{
+        flex-direction: column;
+        gap: 50px;
+    }  
+
+    .feature div{
+        width: 100%;
+      
+    }
+    main{
+
+        padding: 0.5cm;
+    }
+}
+
+
+
+
+.facts{
+    margin: 1.5cm 0;
+    
+}
+.facts p{
+    width: 55%;
+    font-size: .8rem;
+    line-height: 20px;
+}
+
+.cards-container{
+    display: flex;
+gap: 50px;
+    width: 90%;
+    margin: 1.8cm auto 0;
+   
+    
+}
+.cards{
+    border: 2px solid #FF900E;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    flex: 1;
+
+    border-radius: 7px;
+}
+.cards img{
+    width: 20%;
+}
+.cards p{
+    font-size: .8rem;
+    color: #727272;
+    text-align: center;
+}
+/* reponsiveness */
+@media  screen and (max-width:800px) {
+    .cards-container{
+        flex-direction: column;
+        width: 50%;
+    }
+    .facts {
+        text-align: center;
+    }
+    .facts p{
+        width: 100%;
+   text-align: center;
+    }
 }
